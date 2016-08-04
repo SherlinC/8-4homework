@@ -1,0 +1,51 @@
+/*#div1{
+	 width:100px;
+	 height:100px;
+	 background-color:red;
+	 transition:width 2s;
+	 transition-timing-function: ease-in;
+}*/
+/*
+#div1:hover{
+	width:300px;
+}
+*/
+/*
+#div1{
+	 width:500px;
+	 height:500px;
+	margin-left: 50%;
+	margin-top: 20%;
+	background-color:red;
+
+}
+
+#div1:hover{
+	transform:matrix(1,-0.3,0,1,0,0);
+}*/
+
+
+#div1{
+	 width:500px;
+	 height:500px;
+	
+	background-color:red;
+    animation-name: rotate_and_move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate_and_move{
+	0%{
+          transform: rotate(0deg);
+	}
+	/*middle*/
+	50%{
+         transform: rotate(90deg);
+	}
+	/*end*/
+	100%{
+		transform: rotate(-90deg);
+
+	}
+}
